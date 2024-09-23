@@ -30,20 +30,24 @@ class LoginActivity : AppCompatActivity() {
         val loginButton: Button = findViewById(R.id.loginButton)
         val errorMessage: TextView = findViewById(R.id.errorMessage)
 
-        // login
+
         val correctUsername = "jose"
         val correctPassword = "admin"
 
-        // Ação do botão de login
+
         loginButton.setOnClickListener {
             val enteredUsername = usernameEditText.text.toString()
             val enteredPassword = passwordEditText.text.toString()
 
-            // Verificar se o login está correto
+
             if (enteredUsername == correctUsername && enteredPassword == correctPassword) {
-                // Se correto, enviar para a segunda atividade
+                // Bundle para passar dados
+                val bundle = Bundle().apply {
+                    putString("USERNAME", enteredUsername)
+                }
+
                 val intent = Intent(this, WelcomeActivity::class.java).apply {
-                    putExtra("USERNAME", enteredUsername)
+                    putExtras(bundle)
                 }
                 startActivity(intent)
                 finish()
