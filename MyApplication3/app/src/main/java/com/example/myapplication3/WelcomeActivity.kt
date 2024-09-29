@@ -20,8 +20,12 @@ class WelcomeActivity : AppCompatActivity() {
             insets
         }
 
+
+        val welcomeMessage: TextView = findViewById(R.id.welcomeMessage)
+
         // Receber o nome do usuário passado pela LoginActivity
         val username = intent.getStringExtra("USERNAME")
+
         welcomeMessage.text = "Bem-vindo, $username!"
     }
 }

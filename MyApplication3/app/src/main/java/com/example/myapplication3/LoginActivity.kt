@@ -30,10 +30,8 @@ class LoginActivity : AppCompatActivity() {
         val loginButton: Button = findViewById(R.id.loginButton)
         val errorMessage: TextView = findViewById(R.id.errorMessage)
 
-
         val correctUsername = "jose"
         val correctPassword = "admin"
-
 
         loginButton.setOnClickListener {
             val enteredUsername = usernameEditText.text.toString()
