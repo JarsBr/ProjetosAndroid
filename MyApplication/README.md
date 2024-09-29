@@ -21,7 +21,7 @@
 ```
 
 ```kotlin
-// Lista de cervejas
+// Lista de marcas de cervejas
         val beerList = listOf("Heineken", "Budweiser", "Corona", "Skol", "Brahma")
 
 // Spinner
