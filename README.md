@@ -1,19 +1,19 @@
 # Projetos
 
 
-### [MyApplication](MyApplication/) -- Consultor de Cerveja
+### [MyApplication](MyApplication/) / ExpertCerveja -- Consultor de Cerveja
 
 >Construir um aplicação que terá três componentes:
 >- Lista de opções de tipos de cerveja
 >- Um botão que ao ser clicado busca as marcas do tipo de cerveja selecionada
 >- Um campo de texto que mostra as marcas de cerveja do tipo selecionado
 
-### [MyApplication2](MyApplication/) -- App envio de uma mensagem
+### [MyApplication2](MyApplication/) / App envio de uma mensagem
 
 >Criar uma atividade que permita enviar uma mensagem para outra atividade
 que seja capaz de executar a ação SEND
 
-### [MyApplication3](MyApplication/) --  Login
+### [MyApplication3](MyApplication/) /  Login
 
 > Criar duas atividades:
 > 
