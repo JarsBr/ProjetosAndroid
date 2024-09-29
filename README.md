@@ -25,3 +25,10 @@ que seja capaz de executar a ação SEND
 > 
 > - A segunda atividade recebe e mostra uma frase de boa vinda junto com o nome do
 usuário passado como parâmetro
+
+### [Cronometro](cronometro/) /  Cronometro versão 1
+
+> Criar um aplicativo com as seguintes funcionalidades:
+>- Um cronômetro e temporizador (contagem regressiva)
+>- Opção de iniciar, pausar e zerar: criar três botões
+>- Funcionalidade não disponível: avisar ao usuário
