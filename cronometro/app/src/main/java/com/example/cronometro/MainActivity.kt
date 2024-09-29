@@ -2,6 +2,7 @@ package com.example.cronometro
 
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -16,7 +17,8 @@ class MainActivity : AppCompatActivity() {
     private var seconds = 0
     private var running = false
     private lateinit var timeView: TextView
-    private val handler = Handler()
+    private val handler = Handler(Looper.getMainLooper())
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

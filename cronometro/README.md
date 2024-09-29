@@ -10,6 +10,13 @@
 ## Pedaços importantes de Códigos:
 
 ```kotlin
+    private var seconds = 0
+    private var running = false
+    private lateinit var timeView: TextView
+    private val handler = Handler(Looper.getMainLooper())
+```
+
+```kotlin
 // Iniciar o cronômetro
     fun onClickStart(view: View) {
         running = true
