@@ -43,7 +43,7 @@
 
 <div>
 <img src="prints/app1.png" alt="Titulo" width="30%"/>
-<img src="prints/app1.png" alt="Titulo" width="30%">
-<img src="prints/app1.png" alt="Titulo" width="30%"/>
+<img src="prints/app2.png" alt="Titulo" width="30%">
+<img src="prints/app3.png" alt="Titulo" width="30%"/>
 </div>
 
