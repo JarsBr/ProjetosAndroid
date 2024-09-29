@@ -7,7 +7,7 @@
 >- Um botão que ao ser clicado busca as marcas do tipo de cerveja selecionada
 >- Um campo de texto que mostra as marcas de cerveja do tipo selecionado
 
-## Pedaços importantes de Codigos:
+## Pedaços importantes de Códigos:
 
 ```kotlin
 // Faz uma mapeamento das marcas e seus tipos de cervejas.
