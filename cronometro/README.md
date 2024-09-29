@@ -2,7 +2,7 @@
 
 ### Funcionalidades
 
->Construir um aplicação que terá três componentes:
+> Criar um aplicativo com as seguintes funcionalidades:
 >- Um cronômetro e temporizador (contagem regressiva)
 >- Opção de iniciar, pausar e zerar: criar três botões
 >- Funcionalidade não disponível: avisar ao usuário
