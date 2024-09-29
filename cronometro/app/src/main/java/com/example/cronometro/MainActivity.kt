@@ -87,8 +87,7 @@ class MainActivity : AppCompatActivity() {
                 if (running) {
                     seconds++
                 }
-
-                handler.postDelayed(this, 1000) // Executa novamente após 1 segundo
+                handler.postDelayed(this, 1000)
             }
         })
     }
