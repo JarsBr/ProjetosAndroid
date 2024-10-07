@@ -1,5 +1,6 @@
 package com.example.cronometro_temporizador
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -20,10 +21,12 @@ class MainActivity : AppCompatActivity() {
     private var estavaEmexecucao = false
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
 
         // Recuperar estado após rotação de tela, se necessário
         if (savedInstanceState != null) {
@@ -34,6 +37,13 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+
+
+        }
+        val temporizadorButton = findViewById<Button>(R.id.temporizador)
+        temporizadorButton.setOnClickListener {
+            val intent = Intent(this, temporizador::class.java)
+            startActivity(intent)
         }
 
         timeView = findViewById(R.id.textView)
@@ -61,6 +71,8 @@ class MainActivity : AppCompatActivity() {
         estavaEmexecucao = running
         running = false
     }
+
+
 
     override fun onStart() {
         super.onStart()
@@ -108,6 +120,7 @@ class MainActivity : AppCompatActivity() {
         seconds = 0
     }
 
+
     // Executa o cronômetro e atualiza o TextView a cada segundo
     private fun runTimer() {
         handler.post(object : Runnable {
@@ -126,4 +139,5 @@ class MainActivity : AppCompatActivity() {
             }
         })
     }
+
 }
