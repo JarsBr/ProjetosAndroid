@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Título à esquerda -->
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Pesquisa Eleitoral \n          Municipal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /> <!-- Adicionando margem para espaço entre o título e a imagem -->
+
+    <!-- Imagem à direita -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tre"
+        android:contentDescription="TRE"
+        android:adjustViewBounds="true"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="120dp">
+
+        <EditText
+            android:id="@+id/editTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome Completo" />
+
+        <EditText
+            android:id="@+id/editTextTituloEleitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título de Eleitor"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextZona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zona"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextSecao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seção"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cidade" />
+
+        <!-- Seção do estado -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione o Estado:" />
+
+        <Spinner
+            android:id="@+id/spinnerEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Seção de vereadores -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione o vereador:" />
+
+        <Spinner
+            android:id="@+id/spinnerVereador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Seção de prefeitos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione o prefeito:" />
+
+        <Spinner
+            android:id="@+id/spinnerPrefeito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partidos que mais gosta:" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPartido1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partido das Pessoas Unidas - PPU" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPartido2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partido dos Empresarios - PE" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPartido3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partido de Pessoa a Pessoa - PPP" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPartido4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partido Altamente Totalmente Organizado - PATO" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPartido5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partido Favorito - PF" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPartido6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partido Rural Organizado - PRO" />
+
+        <Button
+            android:id="@+id/buttonEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
