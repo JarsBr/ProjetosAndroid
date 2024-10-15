@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ResultadoActivity">
 
-    <!-- Título à esquerda -->
     <TextView
         android:id="@+id/textViewTitulo"
         android:layout_width="wrap_content"
@@ -19,7 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" /> <!-- Adicionando margem para espaço entre o título e a imagem -->
 
-    <!-- Imagem à direita -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
@@ -31,7 +29,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- TextView para mostrar os resultados -->
     <TextView
         android:id="@+id/textViewResultado"
         android:layout_width="wrap_content"

@@ -29,23 +29,20 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Configurando os itens do Spinner de prefeito
         val spinnerPrefeito = findViewById<Spinner>(R.id.spinnerPrefeito)
         val candidatosPrefeito = arrayOf("Flavio Gabriel", "Diego Meireles", "João Faria", "Italo Diniz")
         val adapterPrefeito = ArrayAdapter(this, android.R.layout.simple_spinner_item, candidatosPrefeito)
         adapterPrefeito.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerPrefeito.adapter = adapterPrefeito
 
-        // Configurando os itens do Spinner de vereador
         val spinnerVereador = findViewById<Spinner>(R.id.spinnerVereador)
         val candidatosVereador = arrayOf("Fernado do Leite", "Carlos do Povão", "Kleito Cabelereiro", "Doutora Maria")
         val adapterVereador = ArrayAdapter(this, android.R.layout.simple_spinner_item, candidatosVereador)
         adapterVereador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerVereador.adapter = adapterVereador
 
-        // Inicialize o Spinner
         spinnerEstado = findViewById(R.id.spinnerEstado)
-        // Lista de estados brasileiros
+
         val estados = arrayOf(
             "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará",
             "Distrito Federal", "Espírito Santo", "Goiás", "Maranhão",
@@ -56,11 +53,9 @@ class MainActivity : AppCompatActivity() {
             "Tocantins"
         )
 
-        // Cria um ArrayAdapter usando o layout padrão de spinner e a lista de estados
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, estados)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
-        // Configura o adapter no spinner
         spinnerEstado.adapter = adapter
 
         val buttonEnviar = findViewById<Button>(R.id.buttonEnviar)
@@ -74,7 +69,6 @@ class MainActivity : AppCompatActivity() {
             val prefeito = spinnerPrefeito.selectedItem.toString()
             val vereador = spinnerVereador.selectedItem.toString()
 
-            // Coletando partidos selecionados
             val partidosFavoritos = mutableListOf<String>()
             if (findViewById<CheckBox>(R.id.checkBoxPartido1).isChecked) partidosFavoritos.add("Partido das Pessoas Unidas - PPU")
             if (findViewById<CheckBox>(R.id.checkBoxPartido2).isChecked) partidosFavoritos.add("Partido dos Empresarios - PE")
@@ -83,16 +77,13 @@ class MainActivity : AppCompatActivity() {
             if (findViewById<CheckBox>(R.id.checkBoxPartido5).isChecked) partidosFavoritos.add("Partido Favorito - PF")
             if (findViewById<CheckBox>(R.id.checkBoxPartido6).isChecked) partidosFavoritos.add("Partido Rural Organizado - PRO")
 
-            // Verificar se todos os campos obrigatórios estão preenchidos
             if (nome.isEmpty() || titulo.isEmpty() || zona.isEmpty() || secao.isEmpty() || cidade.isEmpty()) {
                 Toast.makeText(this, "Por favor, preencha todos os campos.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            // Formatando os partidos favoritos
             val partidosFormatados = if (partidosFavoritos.isNotEmpty()) partidosFavoritos.joinToString(", ") else "Nenhum"
 
-            // Enviar dados para a outra atividade
             val intent = Intent(this, ResultadoActivity::class.java).apply {
                 putExtra("NOME", nome)
                 putExtra("TITULO", titulo)
