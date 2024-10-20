@@ -2,7 +2,7 @@
 
 ## Tarefas:
 
-### [RecyclerView](Tarefa05-RecyclerView/) /  Tarefa05: Tarefa sobre RecyclerView
+### Tarefa05: Tarefa sobre RecyclerView | [RecyclerView](Tarefa05-RecyclerView/)
 
 > Criar uma tela com um recyclerview que mostra a lista de todos os estados (bandeira e nome). Ao clicar em um estado, deverá ser mostrado uma nova tela com as seguinte informações do estado clicado:
 >- bandeira
@@ -11,7 +11,7 @@
 >- população
 >- região (Sul, Norte, etc)
 
-### [Pesquisa Eleitoral](Tarefa04-PesquisaEleitoral/) /  Tarefa04: Componentes de layout - Pesquisa Eleitoral
+### Tarefa04: Componentes de layout - Pesquisa Eleitoral | [Pesquisa Eleitoral](Tarefa04-PesquisaEleitoral/)
 
 > Implementar um formulário para uma pesquisa eletrônica no âmbito municipal:
 >  O eleitor deve informar:
@@ -22,14 +22,14 @@
 >- Cidade
 >- Estado (deve-se selecionar o estado)
 
-### [CronometroV1](Tarefa03-CronometroV1/) /  Tarefa03: Cronometro versao 1
+### Tarefa03: Cronometro versao 1 | [CronometroV1](Tarefa03-CronometroV1/)
 
 > Criar um aplicativo com as seguintes funcionalidades:
 >- Um cronômetro e temporizador (contagem regressiva)
 >- Opção de iniciar, pausar e zerar: criar três botões
 >- Funcionalidade não disponível: avisar ao usuário
 
-### [LoginSimples](Tarefa02-LoginSimples/) / Tarefa02: Login Simples
+### Tarefa02: Login Simples | [LoginSimples](Tarefa02-LoginSimples/)
 
 > Criar duas atividades:
 > Uma atividade se comporta como uma tela de login (usuário e senha), Deve-se verificar os dados
@@ -38,7 +38,7 @@
 > A segunda atividade recebe e mostra uma frase de boa vinda junto com o nome do
 usuário passado como parâmetro
 
-### [ExpertCerveja](Tarefa01-ExpertCerveja/) / Tarefa01: ExpertCerveja
+### Tarefa01: ExpertCerveja | [ExpertCerveja](Tarefa01-ExpertCerveja/)
 
 > Construir um aplicação que terá três componentes:
 >- Lista de opções de tipos de cerveja
