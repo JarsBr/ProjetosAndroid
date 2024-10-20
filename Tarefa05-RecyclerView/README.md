@@ -11,7 +11,7 @@
 > Se o projeto .zip exceder 10Mb, enviar o link do github
 
 
-## Pedaços importantes de Códigos:
+<!-- ## Pedaços importantes de Códigos:
 
 ```kotlin
 
@@ -32,4 +32,4 @@
 <img src="prints/app2.png" alt="Titulo" width="30%">
 <img src="prints/app3.png" alt="Titulo" width="30%"/>
 </div>
-
+ -->
