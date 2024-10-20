@@ -1,0 +1,16 @@
+<resources>
+    <!-- Nome do aplicativo -->
+    <string name="app_name">Estados do Brasil</string>
+
+    <!-- Textos para o MainActivity -->
+    <string name="titulo_lista_estados">Lista de Estados</string>
+    <string name="bandeira">Bandeira</string>
+    <string name="nome_estado">Nome do Estado</string>
+
+    <!-- Textos para o DetalhesEstadoActivity -->
+    <string name="detalhes_estado_titulo">Detalhes do Estado</string>
+    <string name="capital">Capital:</string>
+    <string name="populacao">População:</string>
+    <string name="regiao">Região:</string>
+    <string name="voltar">Voltar</string>
+</resources>
