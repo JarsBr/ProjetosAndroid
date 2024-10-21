@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#EDE7F6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exibe Registro"
+        android:textSize="24sp"
+        android:textColor="#5E35B1"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextCapital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome da Capital"
+        android:padding="10dp"
+        android:backgroundTint="#5E35B1"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editTextPais"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome do País"
+        android:padding="10dp"
+        android:backgroundTint="#5E35B1"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/editTextCapital"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editTextSigla"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Sigla do País"
+        android:padding="10dp"
+        android:backgroundTint="#5E35B1"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/editTextPais"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <View
+        android:id="@+id/textViewAviso"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@id/editTextSigla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCriar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Criar"
+        android:backgroundTint="#7E57C2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/textViewAviso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonLer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ler"
+        android:backgroundTint="#7E57C2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/buttonCriar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonAtualizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Atualizar"
+        android:backgroundTint="#7E57C2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/buttonLer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonDeletar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Deletar"
+        android:backgroundTint="#7E57C2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/buttonAtualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
